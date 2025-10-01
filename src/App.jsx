@@ -3,13 +3,13 @@ import Rating from "../components/rating";
 import Thanks from "../components/thanks";
 
 function App() {
-  const [rating, setRating] = useState(0);
-  const [isRated, setIsRated] = useState(true);
+  const [rating, setRating] = useState(null);
+  const [isRated, setIsRated] = useState(false);
   if(isRated){
     return <Thanks rating={rating}/>
   }
   return(
-    <Rating />
+    <Rating setRating={setRating} setIsRated={setIsRated} rate={rating}/>
   );
 }
 

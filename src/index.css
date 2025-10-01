@@ -1,0 +1,40 @@
+:root{
+    font-family: "Overpass", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 15px;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(216, 12%, 8%);
+    min-height: 100vh;
+}
+
+section{
+    background-color: hsl(213, 19%, 18%);
+    padding: 2rem;
+    border-radius: 1rem;
+    width: 20rem;
+    display: grid;
+    gap: 1.5rem;
+}
+h1{
+    color: hsl(0, 100%, 100%);
+    margin: 0;
+}
+p{
+    color: hsl(217, 12%, 63%);
+    margin: 0;
+}
+b{
+    color: hsl(25, 97%, 53%);
+    background-color: hsl(212, 21%, 24%);
+    padding: 0.4rem 1rem;
+    border-radius: 1rem;
+    font-weight: 400;
+}
+.thanks{
+    justify-items: center;
+    text-align: center;
+}
