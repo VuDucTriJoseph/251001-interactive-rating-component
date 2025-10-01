@@ -1,7 +1,16 @@
-
+import { useState } from "react";
+import Rating from "../components/rating";
+import Thanks from "../components/thanks";
 
 function App() {
-  <h1>hello vite</h1>
+  const [rating, setRating] = useState(0);
+  const [isRated, setIsRated] = useState(true);
+  if(isRated){
+    return <Thanks rating={rating}/>
+  }
+  return(
+    <Rating />
+  );
 }
 
-export default App
+export default App;
