@@ -20,12 +20,19 @@ function Rating({setRating,setIsRated,rate}){
   to help us improve our offering!
             </p>
             <form onChange={handleRating} onSubmit={handleSubmit} >
-                <input type="radio" name="rating" value="1" />
-                <input type="radio" name="rating" value="2" />
-                <input type="radio" name="rating" value="3" />
-                <input type="radio" name="rating" value="4" />
-                <input type="radio" name="rating" value="5" />
-                <button type="submit">Submit</button>
+                <div className="rating">  
+                <input type="radio" name="rating" value="1" id="r1"/>
+                <label for="r1">1</label>
+                <input type="radio" name="rating" value="2" id="r2"/>
+                <label for="r2">2</label>       
+                <input type="radio" name="rating" value="3" id="r3"/>
+                <label for="r3">3</label>
+                <input type="radio" name="rating" value="4" id="r4"/>
+                <label for="r4">4</label>
+                <input type="radio" name="rating" value="5" id="r5"/>
+                <label for="r5">5</label>
+                </div>
+                <button type="submit" className="btn">Submit</button>
             </form>
         </section>
     )
